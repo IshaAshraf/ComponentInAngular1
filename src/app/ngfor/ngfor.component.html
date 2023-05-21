@@ -1,0 +1,56 @@
+<!-- <p>ngfor works!</p> -->
+<!-- Problem during implementation -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Product Image</th>
+                        <th>Product Name</th>
+                        <th>Product ID</th>
+                        <th>Product Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pro of products">
+                        
+                        <td>Product Image</td>
+                        <td>{{pro.name}}</td>
+                        <td>{{pro.id}}</td>
+                        <td>{{pro.price}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- <p>ngfor works!</p> -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Product Image</th>
+                        <th>Product Name</th>
+                        <th>Product ID</th>
+                        <th>Product Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product Image</td>
+                        <td>Product Image</td>
+                        <td>Product Image</td>
+                        <td>Product Image</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> -->

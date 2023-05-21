@@ -1,0 +1,35 @@
+
+<!-- Single Class binding -->
+<!-- static -->
+<div class="box" [class.myClass]="true">single class binding</div><br>
+<!-- dynamic -->
+
+<div class="box" [class.myClass]="classBind">single class binding</div><br>
+
+<!-- Single style binding dynamic -->
+<div class="box" [style.margin]="myStyle2">single style binding</div><br>
+<!-- use ternary conditional operator Single style binding dynamic -->
+<div class="box" [style.margin]="isActive ? myStyle1 : myStyle2">single style binding</div><br>
+
+
+
+
+<!-- Multiple class binding static-->
+
+<div class="box" [ngClass] = " 'class1 class2 class3 class4'">Multiple class binding</div>
+
+
+<!-- Multiple style binding -->
+<div class="box" [ngStyle] = "{
+    'background':'red',
+    'border': '10px solid green'
+} ">Multiple class binding</div>
+
+
+<!-- Multiple class binding dynamic-->
+<br>
+<div class="box" [ngClass] = "mltclasses">multiple class binding</div>
+
+<!-- Multiple style binding dynamic-->
+<br>
+<div class="box" [ngStyle] = "mltstyle">multiple style binding</div>

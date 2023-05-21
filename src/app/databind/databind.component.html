@@ -1,0 +1,30 @@
+<p>My name is {{dynName}}</p>
+<br>
+{{6*2}}
+<br>
+{{"welcome " + dynName}}
+<br>
+{{dynName.length}}
+<br>
+{{dynName.toUpperCase()}}
+<br>
+{{myMethod()}}
+<br>
+<!-- use ternary conditional operator in string interpolation -->
+My app status id {{appStatus ? 'online' : 'offline'}}
+<br>
+My app status id {{appSta ? status1 : status2}}<br>
+
+<!-- property binding static-->
+<input type="text" [disabled]="true" name="" id="" [value]="dynName"> <br> 
+<!-- property interpolation static--> <br> 
+<input type="text" name="" id="" value="{{dynName}}">  <br> 
+<br> 
+<!-- property binding dynamic-->
+<input type="text" [disabled]="enable" name="" id="" [value]="dynName"> <br> 
+<!-- property interpolation dynamic--> <br> 
+<input type="text" [hidden]="enable" name="" id="" value="{{dynName}}">  <br> 
+<br>
+
+<!-- use ternary conditional operator in property binding-->
+<input type="text" name="" id="" [value]="appSta ? status1 : status2"> <br> 

@@ -1,0 +1,25 @@
+<!-- <p>ngif works!</p> -->
+<div class="container">
+    <button class="btn btn-success" (click)="CreateBlock()">Create Block</button>
+    <div *ngIf="isValid; else elseblock">Block has been created and block name is my block</div>
+    <ng-template #elseblock>
+    <div >No block has been created yet!</div>
+</ng-template>
+</div>
+
+
+
+<div class="container">
+    <button class="btn btn-success" (click)="CreateBlock()">Create Block</button>
+    <div *ngIf="isValid; then thenblock else elseblock"></div>
+    <ng-template #thenblock>
+        Block has been created and block name is my block
+    </ng-template>
+    <ng-template #elseblock>
+    <div >No block has been created yet!</div>
+</ng-template>
+</div>
+
+
+<!-- 
+Above both code have same working -->
