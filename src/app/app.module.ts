@@ -29,6 +29,10 @@ import { ApiService } from './shared/api.service';
 import { HttpClientModule } from '@angular/common/http';
 // import { AppDirectivesComponent } from './app-directives/app-directives.component';
 import { TestdirectiveDirective } from './appDirective/testdirective.directive';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { BirdsComponent } from './birds/birds.component';
+import { AnimalsComponent } from './animals/animals.component';
+import { GamesComponent } from './games/games.component';
 // import { AppServicesComponent } from './app-services/message.service';
 
 
@@ -59,6 +63,10 @@ import { TestdirectiveDirective } from './appDirective/testdirective.directive';
     EmployeeDashboardComponent,
     // AppDirectivesComponent,
     TestdirectiveDirective,
+    DropdownComponent,
+    BirdsComponent,
+    AnimalsComponent,
+    GamesComponent,
     // AppServicesComponent,
 
   ],
