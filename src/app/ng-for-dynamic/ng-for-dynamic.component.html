@@ -1,0 +1,33 @@
+<p>ng-for-dynamic works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <ng-container *ngFor="let sname of semesters">
+     <h3>{{sname.semesterName}}</h3>
+      <table class="table">
+        <thead>
+          <th>Code</th>
+          <th>Cr</th>
+          <th>marks</th>
+          <th>grade</th>
+        </thead>
+        <tbody>
+          <!-- <tr *ngFor="let arr of tabValue">
+            <td *ngFor="let val of arr">{{val}}</td>
+            
+           </tr> -->
+         <ng-container *ngFor="let arr of sname.subjects">
+          <tr>
+            <td >{{arr.code}}</td>
+            <td>{{ arr.credits }}</td>
+            <td>{{ arr.marks }}</td>
+            <td>{{ arr.grade }}</td>
+          </tr>
+        </ng-container>
+        </tbody>
+      </table>
+    </ng-container>
+    
+    </div>
+  </div>
+</div>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./birds.component.css']
 })
 export class BirdsComponent {
-  birdsList: string[] = ['Eagle', 'Parrot', 'Hummingbird'];
+
+  birds: string[] = ['Eagle', 'Parrot', 'Dove'];
+  
 }

@@ -33,6 +33,12 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { BirdsComponent } from './birds/birds.component';
 import { AnimalsComponent } from './animals/animals.component';
 import { GamesComponent } from './games/games.component';
+import { ArraysofobjectComponent } from './arraysofobject/arraysofobject.component';
+import { ArrComponent } from './arr/arr.component';
+import { NgForComponent } from './ng-for/ng-for.component';
+import { NgForTaskComponent } from './ng-for-task/ng-for-task.component';
+import { NgForDynamicComponent } from './ng-for-dynamic/ng-for-dynamic.component';
+import { LoopsComponent } from './loops/loops.component';
 // import { AppServicesComponent } from './app-services/message.service';
 
 
@@ -67,6 +73,12 @@ import { GamesComponent } from './games/games.component';
     BirdsComponent,
     AnimalsComponent,
     GamesComponent,
+    ArraysofobjectComponent,
+    ArrComponent,
+    NgForComponent,
+    NgForTaskComponent,
+    NgForDynamicComponent,
+    LoopsComponent,
     // AppServicesComponent,
 
   ],

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./animals.component.css']
 })
 export class AnimalsComponent {
-  animalsList: string[] = ['Lion', 'Elephant', 'Tiger'];
+  animals: string[] = ['Lion', 'Elephant', 'Tiger'];
+  
 }
