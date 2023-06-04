@@ -50,16 +50,35 @@ export class NgForTaskComponent implements OnInit {
       console.log('forLoop', newobj);
     }
 
+
+
+
+
+
+
+    
+    let add = 0;
     const arr = [
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      22, 23, 24, 25, 26, 27, 28, 29, 10,
+      22, 23, 24, 25, 26, 27, 28, 29, 30,
     ];
 
-    const arrB = [];
-    const arrC = [];
-    const arrD = [];
+    let arrB = [];
+    let arrC = [];
+    let arrD = [];
+    let even = [];
+    let odd = [];
+    let multiply = [];
+    // let sum = [];
 
     for (let i = 0; i < arr.length; i++) {
+      //sum
+      add += arr[i];
+
+      //multiply
+      let array = 5 * arr[i];
+      multiply.push(array);
+
       if (arr[i] >= 1 && arr[i] <= 5) {
         arrB.push(arr[i]);
       } else if (arr[i] >= 6 && arr[i] <= 9) {
@@ -67,11 +86,23 @@ export class NgForTaskComponent implements OnInit {
       } else if (arr[i] >= 20 && arr[i] <= 24) {
         arrD.push(arr[i]);
       }
+      //even
+      if (arr[i] % 2 === 0) {
+        even.push(arr[i]);
+      }
+      //odd
+      if (arr[i] % 2 === 1) {
+        odd.push(arr[i]);
+      }
     }
 
     console.log('Array', arr);
     console.log('ArrayB', arrB);
     console.log('ArrayC', arrC);
     console.log('ArrayD', arrD);
+    console.log('EvenNumber', even);
+    console.log('OddNumber', odd);
+    console.log('Multiply', multiply);
+    console.log('Sum', add);
   }
 }

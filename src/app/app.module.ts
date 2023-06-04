@@ -39,6 +39,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgForTaskComponent } from './ng-for-task/ng-for-task.component';
 import { NgForDynamicComponent } from './ng-for-dynamic/ng-for-dynamic.component';
 import { LoopsComponent } from './loops/loops.component';
+import { MapmethodComponent } from './mapmethod/mapmethod.component';
 // import { AppServicesComponent } from './app-services/message.service';
 
 
@@ -79,6 +80,7 @@ import { LoopsComponent } from './loops/loops.component';
     NgForTaskComponent,
     NgForDynamicComponent,
     LoopsComponent,
+    MapmethodComponent,
     // AppServicesComponent,
 
   ],
