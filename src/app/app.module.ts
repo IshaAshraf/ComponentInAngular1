@@ -40,6 +40,12 @@ import { NgForTaskComponent } from './ng-for-task/ng-for-task.component';
 import { NgForDynamicComponent } from './ng-for-dynamic/ng-for-dynamic.component';
 import { LoopsComponent } from './loops/loops.component';
 import { MapmethodComponent } from './mapmethod/mapmethod.component';
+import { PromiseComponent } from './promise/promise.component';
+import { SyncComponent } from './sync/sync.component';
+import { SelectcountryComponent } from './selectcountry/selectcountry.component';
+import { NestedarrComponent } from './nestedarr/nestedarr.component';
+import { SelectboxxxComponent } from './selectboxxx/selectboxxx.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 // import { AppServicesComponent } from './app-services/message.service';
 
 
@@ -81,6 +87,12 @@ import { MapmethodComponent } from './mapmethod/mapmethod.component';
     NgForDynamicComponent,
     LoopsComponent,
     MapmethodComponent,
+    PromiseComponent,
+    SyncComponent,
+    SelectcountryComponent,
+    NestedarrComponent,
+    SelectboxxxComponent,
+    CalculatorComponent,
     // AppServicesComponent,
 
   ],

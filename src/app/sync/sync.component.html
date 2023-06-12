@@ -1,0 +1,12 @@
+<!-- <p>sync works!</p> -->
+
+<select (change)="objprop($event)">
+    <ng-container *ngFor="let option of books">
+    <option [value]="option.id">
+      {{option.title}}
+   
+    </option>
+</ng-container>
+  
+</select>
+

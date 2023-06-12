@@ -1,0 +1,39 @@
+<div class="calculator">
+  <div class="row"><input type="text" [(ngModel)]="result" readonly /></div>
+
+  <div class="buttons">
+    <div class="row">
+      <button (click)="onClick(1)">1</button>
+      <button (click)="onClick(2)">2</button>
+      <button (click)="onClick(3)">3</button>
+      <button (click)="onClick('+')">+</button>
+    </div>
+    <div class="row">
+      <button (click)="onClick(4)">4</button>
+      <button (click)="onClick(5)">5</button>
+      <button (click)="onClick(6)">6</button>
+      <button (click)="onClick('-')">-</button>
+    </div>
+    <div class="row">
+      <button (click)="onClick(7)">7</button>
+      <button (click)="onClick(8)">8</button>
+      <button (click)="onClick(9)">9</button>
+      <button (click)="onClick('*')">*</button>
+    </div>
+    <div class="row">
+      <button (click)="onClick(0)">0</button>
+      <button (click)="clear()">C</button>
+      <button (click)="calculate()">=</button>
+      <button (click)="onClick('/')">/</button>
+    </div>
+  </div>
+</div>
+
+<!-- <input type="number" [(ngModel)]="firstValue" />
+<br>
+<br>
+<input type="number" [(ngModel)]="secondValue" />
+<br>
+<br>
+
+<button (click)="calculateSum()">Add</button> -->

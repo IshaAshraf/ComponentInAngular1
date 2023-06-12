@@ -1,0 +1,28 @@
+<!-- <p>selectboxxx works!</p> -->
+<div *ngIf="show">
+  <select (change)="onSelectChange($event)">
+    <ng-container *ngFor="let a of data">
+      <option *ngIf="a.country">
+        {{ a.country }}
+      </option>
+      <option *ngIf="a.city">
+        {{ a.city }}
+      </option>
+    </ng-container>
+  </select>
+</div>
+
+<select *ngIf="!show">
+  <ng-container *ngFor="let a of data">
+    <option *ngIf="a">
+      {{ a }}
+    </option>
+  </ng-container>
+</select>
+
+<!-- <select>
+     <ng-container *ngFor="let a of area">
+          <option *ngIf="a">
+            {{ a }}
+          </option>
+      <select> -->

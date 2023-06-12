@@ -1,0 +1,51 @@
+<!-- <select (change)="onCountrySelected($event)">
+  <ng-container
+    
+    *ngFor="let country of countries"
+  >
+    <option [value]="country.country">
+      {{ country.country }}
+    </option>
+  </ng-container>
+</select>
+<br />
+<br />
+
+<select (change)="onCitySelected($event)">
+  <ng-container *ngFor="let city of cities">
+    <option>
+      {{ city.city }}
+    </option>
+  </ng-container>
+</select>
+<br />
+<br />
+<br />
+
+
+
+<select>
+    <ng-container *ngFor="let area of areas">
+      <option>
+        {{ area }}
+      </option>
+    </ng-container>
+  </select>
+  <br />
+  <br />
+  <br />
+ -->
+<app-selectboxxx
+  [data]="countries" [show]="true"
+  (selectNew)="onCountrySelected($event)"
+></app-selectboxxx>
+<br />
+<br />
+<app-selectboxxx
+  [data]="cities" [show]="true"
+  (selectNew)="onCitySelected($event)"
+></app-selectboxxx>
+
+<br />
+<br />
+<app-selectboxxx [data]="areas" [show]="false"></app-selectboxxx>

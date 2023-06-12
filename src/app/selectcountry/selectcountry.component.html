@@ -1,0 +1,17 @@
+<select (change)="onCountrySelected($event)">
+  <ng-container *ngFor="let country of countries">
+    <option [value]="country.name">
+      {{ country.name }}
+    </option>
+  </ng-container>
+</select>
+<br />
+<br />
+
+<select  >
+  <ng-container *ngFor="let city of cities">
+    <option >
+      {{ city }}
+    </option>
+  </ng-container>
+</select>
