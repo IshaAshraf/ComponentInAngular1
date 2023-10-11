@@ -1,0 +1,20 @@
+<!-- <p>parent-lifecyclehook works!</p> -->
+<br />
+
+<h1>Life Cycle Hooks</h1>
+<div class="page-area">
+  <br />
+  <br />
+  <input type="" placeholder="Input here . . ." #val />
+  <br />
+  <br />
+  <button (click)="submitValue(val)">Submit Value</button>
+  <br />
+  <br />
+  <app-child-lifecyclehook *ngIf="childhookexist" [myValue]="value">
+    <br />NgContent: {{ value }}</app-child-lifecyclehook
+  >
+  <br />
+  <br />
+  <button class="btn btn-danger" (click)="destroy()">Destroy Component</button>
+</div>

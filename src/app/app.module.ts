@@ -46,10 +46,16 @@ import { SelectcountryComponent } from './selectcountry/selectcountry.component'
 import { NestedarrComponent } from './nestedarr/nestedarr.component';
 import { SelectboxxxComponent } from './selectboxxx/selectboxxx.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { ParentLifecyclehookComponent } from './parent-lifecyclehook/parent-lifecyclehook.component';
+import { ChildLifecyclehookComponent } from './child-lifecyclehook/child-lifecyclehook.component';
+import { InputComponent } from './input/input.component';
+import { InputautoComponent } from './inputauto/inputauto.component';
+import { MappingchangenameComponent } from './mappingchangename/mappingchangename.component';
 // import { AppServicesComponent } from './app-services/message.service';
 
-
-
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { MyLoaderComponent } from './my-loader/my-loader.component'; // Import the NgxSpinnerModule
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -93,6 +99,13 @@ import { CalculatorComponent } from './calculator/calculator.component';
     NestedarrComponent,
     SelectboxxxComponent,
     CalculatorComponent,
+    ParentLifecyclehookComponent,
+    ChildLifecyclehookComponent,
+    InputComponent,
+    InputautoComponent,
+    MappingchangenameComponent,
+    MyLoaderComponent,
+  
     // AppServicesComponent,
 
   ],
@@ -101,7 +114,9 @@ import { CalculatorComponent } from './calculator/calculator.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule.forRoot()// Add NgxSpinnerModule to the imports
   ],
   providers: [DesignutilityService,ApiService],
   bootstrap: [AppComponent]

@@ -1,5 +1,14 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": 2,
+      "firstName": "Isha",
+      "lastName": "Ashraf",
+      "email": "i@gmail.com",
+      "mobile": "33423",
+      "salary": "234232"
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"

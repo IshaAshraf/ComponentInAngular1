@@ -157,4 +157,34 @@ export class MapmethodComponent implements OnInit {
     
     console.log(multipliedArray);
   }
+
+  Value: string = '';
+  onInputChange() {
+    console.log(this.Value);
+  }
+  array = [
+    {
+      id: 1,
+      name: 'John',
+    },
+    {
+      id: 2,
+      name: 'Doe',
+    },
+    {
+      id: 3,
+      name: 'Alex',
+    },
+    {
+      id: 4,
+      name: 'Kevin',
+    },
+  ];
+
+  
+
+
+
+  
+  
 }
